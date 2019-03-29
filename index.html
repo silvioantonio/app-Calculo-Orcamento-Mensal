@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Orcamento Mensal</title>
+    <script src="arquivo.js"></script>
+    <style type="text/css">
+        input{
+            display: block;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label for="nome">Nome: </label>
+        <input type="text" id="nome" value="silvio" required>
+        <label for="km_por_litro">Kilometro por litro do veiculo</label>
+        <input type="text" id="km_por_litro" value="1" required>
+        <label for="distancia_entre_locais">Distancia entre os locais</label>
+        <input type="text" id="distancia_entre_locais" value="1" required>
+        <label for="valor_litro_combustivel">Valor do litro do combustivel</label>
+        <input type="text" id="valor_litro_combustivel" value="1" required>
+        <label for="percentual_de_saque">Valor cobrado por saque no cartao</label>
+        <input type="text" id="percentual_de_saque" value="1" required>
+        <label for="qtd_almoco_sabados">Quantidade de almoços em outros restaurantes</label>
+        <input type="text" id="qtd_almoco_sabados" value="1" required>
+        <label for="qtd_dias_almoco">Quantidade de dias de almoços</label>
+        <input type="text" id="qtd_dias_almoco" value="1" required>
+        <label for="valor_unidade_sabados">Valor pago por prato em outros restaurantes</label>
+        <input type="text" id="valor_unidade_sabados" value="1" required>
+        <label for="valor_unidade">Valor pago por pratos</label>
+        <input type="text" id="valor_unidade" value="1" required>
+
+        <input type="button" value="enviar" onclick="start()">
+    </form>
+    <div id="resultado"></div>
+</body>
+</html>
